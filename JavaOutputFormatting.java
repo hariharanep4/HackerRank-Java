@@ -10,6 +10,7 @@ public class Solution {
             int integer = scanner.nextInt();
             System.out.printf("%-15s%03d\n", string, integer);
         }
+        scanner.close();
         System.out.println("================================");
     }
 }
