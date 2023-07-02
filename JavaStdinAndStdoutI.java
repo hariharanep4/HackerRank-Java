@@ -6,6 +6,7 @@ public class Solution {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
+        scanner.close();
 
         System.out.println(a);
         System.out.println(b);
