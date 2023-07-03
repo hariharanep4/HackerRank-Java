@@ -1,16 +1,20 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(bufferedReader.readLine().trim());
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
         for (int i = 0; i < t; i++) {
-            int a = Integer.parseInt(bufferedReader.readLine().trim());
-            int b = Integer.parseInt(bufferedReader.readLine().trim());
-            int n = Integer.parseInt(bufferedReader.readLine().trim());
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int n = scanner.nextInt();
+            int c = a;
+            for (int j = 0; j < n; j++) {
+                c += Math.pow(2, j) * b;
+                System.out.printf("%s ", c);
+            }
+            System.out.println();
         }
-        bufferedReader.close();
+        scanner.close();
     }
 }
